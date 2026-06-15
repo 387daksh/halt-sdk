@@ -1,0 +1,37 @@
+{
+  "name": "halt-sdk",
+  "version": "1.1.0",
+  "description": "A hard budget kill switch for TypeScript AI agents. Set a limit, Halt enforces it.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "budget",
+    "cost",
+    "kill-switch",
+    "openai",
+    "anthropic",
+    "langchain",
+    "mastra"
+  ],
+  "author": "gethalt",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.104.2",
+    "openai": "^6.42.0",
+    "tiktoken": "^1.0.21"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/387daksh/halt-sdk"
+  }
+}
