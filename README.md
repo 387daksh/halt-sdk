@@ -2,7 +2,17 @@
 
 > **A hard budget kill switch for TypeScript AI agents**
 
-Set a spend limit. Halt enforces it. When your agent hits the limit, execution stops - no surprises, no overages.
+[![npm version](https://img.shields.io/npm/v/halt-sdk?color=cb3837&logo=npm)](https://www.npmjs.com/package/halt-sdk)
+[![npm downloads](https://img.shields.io/npm/dt/halt-sdk?label=downloads&color=0e75b6)](https://www.npmjs.com/package/halt-sdk)
+[![TypeScript](https://img.shields.io/badge/TypeScript-first-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+
+Set a spend limit. Halt enforces it. When your agent hits the limit, execution stops: no surprises, no overages.
+
+**Why:** autonomous agents loop, retry and call tools on their own. One runaway loop can burn a month's API budget overnight. Dashboards tell you after the fact; Halt stops the call before it happens.
+
+```bash
+npm install halt-sdk
+```
 
 ## Features
 
@@ -10,7 +20,7 @@ Set a spend limit. Halt enforces it. When your agent hits the limit, execution s
 ✅ **Auto-tracking** - Wrap your OpenAI/Anthropic clients, tokens tracked automatically
 ✅ **Mid-stream Stopping** - Stop generation mid-stream to prevent overages
 ✅ **Partial Results** - Save and recover partial results when budget is hit
-✅ **Multi-model Support** - Works with OpenAI, Anthropic, Google, Mistral, and Meta models
+✅ **40+ Models Priced** - OpenAI, Anthropic, Gemini, DeepSeek, Mistral, Llama (incl. via Groq)
 ✅ **TypeScript First** - Full type safety and IntelliSense support
 
 ## Install
